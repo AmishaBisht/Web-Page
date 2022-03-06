@@ -3,10 +3,11 @@
 <head>
   <title>Survey-form</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="main.js"></script>
 </head>
 
   <body>
-    <div class="container">
+    <div class="container" id="choice">
       <header class="header">
         <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
         <p id="description" class="description text-center">
@@ -30,7 +31,7 @@
           <input
             type="email"
             name="email"
-            id="choice 1"
+            id="choice1"
             class="form-control"
             placeholder="Enter your Email"
             required
@@ -217,6 +218,7 @@
       </form>
     </div>
         
-         <p>choices filled: <span id="showc"></span></p>
+         <p>choices filled: <span id="show"></span></p>
+
   </body>
 </html>
