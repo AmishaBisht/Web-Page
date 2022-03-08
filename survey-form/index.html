@@ -1,0 +1,197 @@
+
+
+<script src="main.js"></script>
+
+<body>
+
+  <h1 id="title"> Self-Assesment Survey Form</h1>
+  <h3 id="title"> <center> Let's analyse yourself. </center> </h3>
+
+  <div id="survey">
+
+    <p id="description">Below is a survey of the languages you have learned from before and including FreeCodeCamp.</p>
+
+    <form id="survey-form">
+
+      <div class="row">
+
+        <div class="label">
+
+          <label for="name" id="name-label"><span>*</span>Name:</label>
+
+        </div>
+
+        <div class="form-content">
+
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="label">
+
+          <label for="email" id="email-label"><span>*</span>Email:</label>
+
+        </div>
+
+        <div class="form-content">
+
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="label">
+
+          <label for="age" id="number-label">Age:</label>
+
+        </div>
+
+        <div class="form-content">
+
+          <input type="number" id="age" name="age" placeholder="Age" min="14" max="125" />
+
+        </div>
+
+      </div>
+
+<!-- checkboxes for languages, textarea for favorite thing about coding, textarea for additional comments, submit button, style it up! -->
+
+      <div class="row">
+
+        <div class="label">
+
+          <label for="coder">Do you consider yourself a coder?</label>
+
+        </div>
+
+        <div class="form-content">
+
+          <input type="radio" id="coder" value="yes">Yes <br />
+
+          <input type="radio" id="coder" value="no">No <br />
+
+          <input type="radio" id="coder" value="basics">I know the basics <br />
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="label">
+
+          <label for="length">If so, for how long have you been coding?</label>
+
+        </div>
+
+        <div class="form-content">
+
+          <select id="exp" name="exp">
+
+            <option value=''>Please Select</option>
+
+            <option value="under-two">Less than 2 years</option>
+
+            <option value="two-to-four">2-4 years</option>
+
+            <option value="four-to-six">4-6 years</option>
+
+            <option value="over-six">more than 6 years</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+      
+
+      <div class="row">
+
+        <div class="label">
+
+          <label for="languages">Which languages, even if only used in a basic environment have you coded in (check all that apply)?</label>
+
+        </div>
+
+        <div class="form-content">
+
+          <input type="checkbox" name="language1" id="language1" value="html">HTML/CSS<br />
+
+          <input type="checkbox" name="language2" id="language2"
+
+                 value="html">PHP<br />
+
+          <input type="checkbox" name="language3"  id="language3"                       value="html">Javascript<br />
+
+          <input type="checkbox" name="language4"  id="language4"                         value="html">Java<br />
+
+          <input type="checkbox" name="language5" id="language5"
+
+                 value="html">C++<br />
+
+          <input type="checkbox" name="language6" id="language6"
+
+                 value="html">C#<br />
+
+          <input type="checkbox" name="language7"  id="language7"                    value="html">Ruby/Ruby on Rails<br />
+
+          <input type="checkbox" name="language8"  id="language8"                    value="html">Python<br />
+
+          <input type="checkbox" name="language9"  id="language9"                   value="html">Elixir/Phoenix<br />
+
+          <input type="checkbox" name="language10" id="language10"                   value="html">Basic<br />
+
+          <input type="checkbox" name="language11"  id="language11"                  value="html">ReactJS<br />
+
+          <input type="checkbox" name="language12" id="language12"                    value="html">NodeJS<br />
+
+        </div>
+
+      </div>
+
+      
+
+      <div class="row">
+
+        <div class="label">
+
+          <label for="best" id="best">What is for favorite part about software development?</label>
+
+        </div>
+
+        <div class="form-content">
+
+          <textarea rows="20" cols="60" id="other"></textarea>
+
+        </div>
+
+      </div>
+
+      
+
+      <div class="submit-row">
+          <input type="button" value="submit" id="submit"/>
+
+<div class="btn btn-success">
+  <input type="button" value="Counter checker" 
+         id="submit" onclick="count()" />
+
+    </div>
+        
+
+      </div>
+      
+    </form>
+
+    </div>
+
+</body>
+
